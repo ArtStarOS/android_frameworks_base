@@ -80,4 +80,6 @@
     <!-- Whether device supports variable refresh rate -->
     <bool name="config_hasVariableRefreshRate">false</bool>
 
+    <!-- Whether device can force navbar disabling -->
+    <bool name="config_canForceDisableNavigationBar">false</bool>
 </resources>

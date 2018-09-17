@@ -66,4 +66,6 @@
     <!-- Whether device supports variable refresh rate -->
     <java-symbol type="bool" name="config_hasVariableRefreshRate" />
 
+    <!-- Whether device can force navbar disabling -->
+    <java-symbol type="bool" name="config_canForceDisableNavigationBar" />
 </resources>

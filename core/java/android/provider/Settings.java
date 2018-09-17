@@ -4538,6 +4538,15 @@ public final class Settings {
         /** @hide */
         public static final Validator REFRESH_RATE_SETTING_VALIDATOR = NON_NEGATIVE_INTEGER_VALIDATOR;
 
+         * Force show navigation bar setting.
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_SHOW = "navigation_bar_show";
+
+         /** @hide */
+        public static final Validator NAVIGATION_BAR_SHOW_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
         /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
@@ -4751,6 +4760,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(PROXIMITY_ON_WAKE);
             PRIVATE_SETTINGS.add(REFRESH_RATE_SETTING);
             PRIVATE_SETTINGS.add(LOCKSCREEN_BATTERY_INFO);
+            PRIVATE_SETTINGS.add(NAVIGATION_BAR_SHOW);
         }
 
         /**
@@ -4850,6 +4860,7 @@ public final class Settings {
             VALIDATORS.put(BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED, BUTTON_BACKLIGHT_ONLY_WHEN_PRESSED_VALIDATOR);
             VALIDATORS.put(REFRESH_RATE_SETTING, REFRESH_RATE_SETTING_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_BATTERY_INFO, LOCKSCREEN_BATTERY_INFO_VALIDATOR);
+            VALIDATORS.put(NAVIGATION_BAR_SHOW, NAVIGATION_BAR_SHOW_VALIDATOR);
         }
 
         /**
